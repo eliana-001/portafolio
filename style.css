@@ -453,3 +453,90 @@ h1, h2, h3 {
         font-size: 1.2em;
     }
 }
+/* Sección de Lenguajes y Frameworks */
+.subsection-title {
+    font-size: 1.8em;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.subsection-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 1.5px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Más pequeño para tecnologías */
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tech-item {
+    background-color: var(--dark-bg-color);
+    border-radius: 15px;
+    padding: 25px 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px; /* Altura mínima para consistencia */
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    background-color: var(--dark-gray-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.tech-icon {
+    font-size: 3.2em; /* Iconos más grandes */
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.tech-item h3 {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+/* Ajustes Responsive para la nueva sección */
+@media (max-width: 600px) {
+    .subsection-title {
+        font-size: 1.5em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px;
+    }
+    .tech-item {
+        padding: 20px 10px;
+        min-height: 120px;
+    }
+    .tech-icon {
+        font-size: 2.5em;
+    }
+    .tech-item h3 {
+        font-size: 1.1em;
+    }
+}

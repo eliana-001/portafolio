@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio -Alondra Herrera</title>
+    <title>Mi Portafolio - Alondra Herrera</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@404,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#skills">Competencias</a></li>
+                    <li><a href="#languages-frameworks">Tecnologías</a></li> <!-- Enlace añadido aquí -->
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -28,12 +29,50 @@
             <div class="container">
                 <div class="hero-content">
                     <h2>Hola, soy <span class="highlight">Alondra</span></h2>
-                    <p>Desarrolladora apasionado con foco en robótica y experiencias web creativas.</p>
+                    <p>Desarrolladora apasionada con foco en robótica y experiencias web creativas.</p>
                     <a href="#projects" class="btn">Ver Proyectos</a>
                 </div>
                 <div class="hero-image">
                     <!-- Aquí podrías poner una ilustración simple 2D de ti o un avatar -->
                     <img src="/cat.jpg" alt="Tu Avatar" class="floating-img">
+                </div>
+            </div>
+        </section>
+        <!-- Nueva Sección: Lenguajes y Frameworks -->
+        <section id="languages-frameworks" class="section dark-bg">
+             <div class="container">
+                <h2 class="section-title">Tecnologías que Manejo</h2> <br>
+
+                <h3 class="subsection-title">Lenguajes</h3>
+                <div class="tech-grid">
+                    <div class="tech-item fade-in">
+                        <i class="fab fa-php tech-icon"></i>
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="tech-item fade-in delay-1">
+                        <i class="fab fa-html5 tech-icon"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="tech-item fade-in delay-2">
+                        <i class="fab fa-css3-alt tech-icon"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="tech-item fade-in delay-3">
+                        <i class="fab fa-js-square tech-icon"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Frameworks</h3>
+                <div class="tech-grid">
+                    <div class="tech-item fade-in delay-4">
+                        <i class="fab fa-python tech-icon"></i> <!-- Icono de Python para Django -->
+                        <h3>Django</h3>
+                    </div>
+                    <div class="tech-item fade-in delay-5">
+                        <i class="fab fa-react tech-icon"></i>
+                        <h3>React</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -49,15 +88,15 @@
                         <a href="https://echolinks.escuelarobertoarlt.com/" class="btn btn-small">Ver más</a>
                     </div>
                     <div class="project-card fade-in delay-1">
-                        <img src="https://via.placeholder.com/400x250.png?text=Proyecto+2" alt="Proyecto 2">
+                        <img src="/estella.jpg" alt="Proyecto 2">
                         <h3>Estella</h3>
                         <p>red social para artista independientes</p>
                         <a href="#" class="btn btn-small">Ver más</a>
                     </div>
                     <div class="project-card fade-in delay-2">
-                        <img src="https://via.placeholder.com/400x250.png?text=Proyecto+3" alt="Proyecto 3">
+                        <img src="/eucalipto.jpg" alt="Proyecto 3">
                         <h3>Eucalipto</h3>
-                        <p>e-comerse</p>
+                        <p>e-commerce</p>
                         <a href="#" class="btn btn-small">Ver más</a>
                     </div>
                 </div>
@@ -71,12 +110,14 @@
                     <div class="skill-item fade-in">
                         <i class="fas fa-robot skill-icon"></i>
                         <h3>3er amistoso de robotica de la  region 9</h3>
-                        <p>1 lugar en sumo y 2do lugar en futbol robotico </p>
+                        <p>1 lugar en sumo y 2do lugar en futbol robotico </p> <br>
+                        <a href="https://www.instagram.com/tortubotica.arlt/" class="btn btn-small">Ver más</a>
                     </div>
                     <div class="skill-item fade-in delay-1">
                         <i class="fas fa-eye skill-icon"></i>
                         <h3>Ferias Acte 2025</h3>
-                        <p>2do lugar en el triatlon</p>
+                        <p>2do lugar en el triatlon</p> <br>
+                        <a href="https://www.instagram.com/tortubotica.arlt/p/DNtR3du4jNe/?img_index=1" class="btn btn-small">Ver más</a>
                     </div>
                     <div class="skill-item fade-in delay-2">
                         <i class="fas fa-cogs skill-icon"></i>
@@ -86,7 +127,11 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact section dark-bg">
+
+       
+        <!-- Fin de Nueva Sección -->
+
+        <section id="contact" class="contact section"> <!-- Cambié a 'section' para alternar color de fondo con 'dark-bg' anterior -->
             <div class="container">
                 <h2 class="section-title">Contáctame</h2>
                 <p class="contact-text">¿Interesado en colaborar? ¡Hablemos!</p>
@@ -100,7 +145,7 @@
             <p>&copy; 2025 Eliana-001. Todos los derechos reservados.</p>
             <div class="social-links">
                 <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/eliana-001" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
